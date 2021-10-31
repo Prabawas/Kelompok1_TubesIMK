@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +14,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::get('/admin', function () {
-    return view('layouts_guest/guest-template');
-});
+
+
+//Halaman dashboard
+Route::get('/', [GuestController::class, 'beranda']);
+
+//Halaman about
+Route::get('/tentang', [GuestController::class, 'tentang']);
+
+//Halaman service
+Route::get('/pelayanan', [GuestController::class, 'pelayanan'])->middleware('auth');
+
+//Halaman doctor
+Route::get('/dokter', [GuestController::class, 'dokter']);
+
+//Halaman Contact
+Route::get('/kontak', [GuestController::class, 'kontak']);
 
 Auth::routes();
 
