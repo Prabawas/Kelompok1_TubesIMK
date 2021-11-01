@@ -40,12 +40,12 @@
                             >
                         </li>
                         <li>
-                            <a class="nav-link scrollto {{ Request::is('dokter*') ? 'active' : ''}}" href="/doctors"
+                            <a class="nav-link scrollto {{ Request::is('dokter*') ? 'active' : ''}}" href="/dokter"
                                 >Dokter</a
                             >
                         </li>
                         <li>
-                            <a class="nav-link scrollto {{ Request::is('kontak*') ? 'active' : ''}}" href="/contact"
+                            <a class="nav-link scrollto {{ Request::is('kontak*') ? 'active' : ''}}" href="/kontak"
                                 >Kontak</a
                             >
                         </li>
