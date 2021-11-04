@@ -94,7 +94,7 @@
                                 berbagai penyakit umum. Dikelolah oleh Dr. Lapan H Tarigan.<br/> 
                                 Klinik ini sudah berdiri sejak Tahun 1997 selama hampir 24 tahun.
                             </p>
-                            <a href="/about" class="btn-get-started scrollto"
+                            <a {{ Request::is('tentang*') ? 'active' : ''}} href="/tentang" class="btn-get-started scrollto"
                                 >Lebih lanjut</a
                             >
                         </div>
