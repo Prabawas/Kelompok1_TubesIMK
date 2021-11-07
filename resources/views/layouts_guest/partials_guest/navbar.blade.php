@@ -11,8 +11,8 @@
                 <div class="align-items-center d-none d-md-flex">
                     <i class="bi bi-clock"></i> Senin - Sabtu, 04.00 - 07.00 WIB
                 </div>
-                <div class="d-flex align-items-center">
-                    <i class="bi bi-phone"></i> Kontak 0852-6901-5132
+                <div class="d-flex align-items-center" >
+                    <i class="bi bi-phone" id="noHp">Kontak 0852-6901-5132</i> 
                 </div>
             </div>
         </div>
@@ -29,23 +29,23 @@
                 <nav id="navbar" class="navbar order-last order-lg-0 me-auto">
                     <ul>
                         <li>
-                            <a class="nav-link scrollto {{ Request::is('/*') ? 'active' : ''}}" href="/">Beranda</a>
+                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('/*') ? 'active' : ''}}" href="/">Beranda</a>
                         </li>
                         <li>
-                            <a class="nav-link scrollto {{ Request::is('tentang*') ? 'active' : ''}}" href="/tentang">Tentang</a>
+                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('tentang*') ? 'active' : ''}}" href="/tentang">Tentang</a>
                         </li>
                         <li>
-                            <a class="nav-link scrollto {{ Request::is('pelayanan*') ? 'active' : ''}}" href="/pelayanan"
+                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('pelayanan*') ? 'active' : ''}}" href="/pelayanan"
                                 >Pelayanan</a
                             >
                         </li>
                         <li>
-                            <a class="nav-link scrollto {{ Request::is('dokter*') ? 'active' : ''}}" href="/dokter"
+                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('dokter*') ? 'active' : ''}}" href="/dokter"
                                 >Dokter</a
                             >
                         </li>
                         <li>
-                            <a class="nav-link scrollto {{ Request::is('kontak*') ? 'active' : ''}}" href="/kontak"
+                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('kontak*') ? 'active' : ''}}" href="/kontak"
                                 >Kontak</a
                             >
                         </li>
@@ -56,9 +56,9 @@
                 <nav class="navbar navbar-light bg-light">
                     <div class="container-fluid">
                         <ul>
-                            <li><a class="nav-link scrollto" href="#services">Register</a></li>
-                            <li><a class="nav-link scrollto" href="#services">Login</a></li>
-                            <li><a class="nav-link scrollto" href="#services">Logout</a></li>
+                            <li><a id="buttonHeader" class="nav-link scrollto" href="#services">Register</a></li>
+                            <li><a id="buttonHeader" class="nav-link scrollto" href="#services">Login</a></li>
+                            <li><a id="buttonHeader" class="nav-link scrollto" href="#services">Logout</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -89,7 +89,7 @@
                     >
                         <div class="container text-center">
                             <h2>Selamat datang di <span>Klinik Ora Et Labora</span></h2>
-                            <p>
+                            <p class="pag">
                                 Klinik Ora Et Labora merupakan klinik pratama yang menangani
                                 berbagai penyakit umum. Dikelolah oleh Dr. Lapan H Tarigan.<br/> 
                                 Klinik ini sudah berdiri sejak Tahun 1997 selama hampir 24 tahun.
@@ -109,7 +109,7 @@
                     >
                         <div class="container">
                             <h2>Apa itu Klinik?</h2>
-                            <p>
+                            <p class="pag">
                                 Klinik adalah fasilitas pelayanankesehatan yang menyelenggarakan 
                                 dan menyediakan pelayanan medis dasar dan atau spesialistik, <br/>
                                 diselenggarakan oleh lebih dari satu jenis tenaga kesehatan 

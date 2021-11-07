@@ -25,19 +25,19 @@
                                 </li>
                                 <li>
                                     <i class="bx bx-chevron-right"></i>
-                                    <a href="/about">About</a>
+                                    <a href="/tentang">About</a>
                                 </li>
                                 <li>
                                     <i class="bx bx-chevron-right"></i>
-                                    <a href="/service">Services</a>
+                                    <a href="/pelayanan">Services</a>
                                 </li>
                                 <li>
                                     <i class="bx bx-chevron-right"></i>
-                                    <a href="/doctors">Doctors</a>
+                                    <a href="/dokter">Doctors</a>
                                 </li>
                                 <li>
                                     <i class="bx bx-chevron-right"></i>
-                                    <a href="/contact">Contact</a>
+                                    <a href="/kontak">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -67,6 +67,11 @@
         <script src="{{ asset('guest/vendor/php-email-form/validate.js')}}"></script>
         <script src="{{ asset('guest/vendor/purecounter/purecounter.js')}}"></script>
         <script src="{{ asset('guest/vendor/swiper/swiper-bundle.min.js')}}"></script>
+        
+        /* JS BIKIN SENDIRI */
+        <script src="{{ asset('guest/vendor/byMe/header.js')}}"></script>
+        
+
 
         <!-- Template Main JS File -->
         <script src="{{ asset('guest/js/main.js')}}"></script>
