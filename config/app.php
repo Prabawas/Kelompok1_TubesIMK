@@ -67,7 +67,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    // 'timezone' => 'UTC',
+    'timezone' => 'Asia/Jakarta',
 
     /*
     |--------------------------------------------------------------------------
@@ -105,8 +106,10 @@ return [
     | localized telephone numbers, street address information and more.
     |
     */
+    
+    // 'faker_locale' => 'en_US',
 
-    'faker_locale' => 'en_US',
+   'faker_locale' => env('FAKER_LOCALE', 'en_US'),
 
     /*
     |--------------------------------------------------------------------------
