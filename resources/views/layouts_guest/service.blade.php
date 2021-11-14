@@ -6,7 +6,7 @@
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
                         <h2>Pelayanan</h2>
-                        <h4 style="font-style: italic;"> Registrasi Pasien </h4>
+                        <h4 style="font-style: italic;"> Registrasi Data Pasien </h4>
                     </div>
 
                   <form>
