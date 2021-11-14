@@ -84,7 +84,7 @@
                     <div
                         class="carousel-item active"
                         style="
-                            background-image: url({{ asset('guest/img/slide/slide-1.jpg')}});
+                            background-image: url({{ asset('guest/img/slide/slide_11.jpeg')}});
                         "
                     >
                         <div class="container text-center">
@@ -104,7 +104,7 @@
                     <div
                         class="carousel-item"
                         style="
-                            background-image: url({{ asset('guest/img/slide/slide-2.jpg')}});
+                            background-image: url({{ asset('guest/img/slide/slide_22.jpeg')}});
                         "
                     >
                         <div class="container">

@@ -125,7 +125,7 @@
                         <div
                             class="image col-lg-6 order-1 order-lg-2"
                             style="
-                                background-image: url('{{ asset('guest/img/features.jpg')}}');
+                                background-image: url('{{ asset('guest/img/featuress.jpeg')}}');
                             "
                             data-aos="zoom-in"
                         ></div>

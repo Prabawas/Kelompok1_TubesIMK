@@ -16,7 +16,7 @@
                     <div class="row">
                         <div class="col-lg-6" data-aos="fade-right">
                             <img
-                                src="{{ asset('guest/img/about.jpg')}}"
+                                src="{{ asset('guest/img/aboutt.jpeg')}}"
                                 class="img-fluid"
                                 alt=""
                             />

@@ -19,23 +19,23 @@
                         <div class="col-lg-2 col-md-6 footer-links">
                             <h4>Useful Links</h4>
                             <ul>
-                                <li>
+                                <li >
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/">Home</a>
                                 </li>
-                                <li>
+                                <li >
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/tentang">About</a>
                                 </li>
-                                <li>
+                                <li >
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/pelayanan">Services</a>
                                 </li>
-                                <li>
+                                <li >
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/dokter">Doctors</a>
                                 </li>
-                                <li>
+                                <li >
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/kontak">Contact</a>
                                 </li>
@@ -54,9 +54,10 @@
         </footer>
         <!-- End Footer -->
         
-        <a
+        <a style="background-color: firebrick"
             href="#"
             class="back-to-top d-flex align-items-center justify-content-center"
+            id="exitButton"
             ><i class="bi bi-arrow-up-short"></i
         ></a>
 

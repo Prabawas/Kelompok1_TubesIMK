@@ -14,7 +14,7 @@
                         <div class="col-md-8">
                            <div class="mb-3 ">
                               <label for="nama" class="form-label">Nama Lengkap</label>
-                              <input type="text" class="form-control" id="nama" name="nama" placeholder="nama lengkap" required="">
+                              <input type="text" class="form-control" id="nama" name="nama" placeholder="nama lengkap" required="Masukkan Nama Anda">
                             </div>
                             <div class="mb-3 ">
                               <label for="tglLahir" class="form-label">Tanggal Lahir</label>
@@ -45,7 +45,7 @@
                             </div> 
 
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                              <button class="btn btn-info" type="submit">Simpan</button>
+                              <button class="btn btn-success" type="submit">Simpan</button>
                             </div>
                         </div>
                     </div>

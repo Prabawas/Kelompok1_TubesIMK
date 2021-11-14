@@ -27,7 +27,7 @@ Route::get('/', [GuestController::class, 'beranda']);
 Route::get('/tentang', [GuestController::class, 'tentang']);
 
 //Halaman service
-Route::get('/pelayanan', [GuestController::class, 'pelayanan'])->middleware('auth');
+Route::get('/pelayanan', [GuestController::class, 'pelayanan']); //->middleware('auth');
 
 //Halaman doctor
 Route::get('/dokter', [GuestController::class, 'dokter']);
