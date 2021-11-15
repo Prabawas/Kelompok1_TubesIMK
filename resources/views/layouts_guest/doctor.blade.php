@@ -23,7 +23,7 @@
                             >
                                 <div class="member-img">
                                     <img
-                                        src="{{ asset('guest/img/doctors/doctors-1.jpg')}}"
+                                        src="{{ asset('guest/img/doctors/doctors-111.jpeg')}}"
                                         class="img-fluid"
                                         alt=""
                                     />
