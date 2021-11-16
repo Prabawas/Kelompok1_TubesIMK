@@ -32,37 +32,42 @@
                             <a id="buttonHeader" class="nav-link scrollto {{ Request::is('/*') ? 'active' : ''}}" href="/">Beranda</a>
                         </li>
                         <li>
-                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('tentang*') ? 'active' : ''}}" href="/tentang">Tentang</a>
-                        </li>
-                        <li>
                             <a id="buttonHeader" class="nav-link scrollto {{ Request::is('pelayanan*') ? 'active' : ''}}" href="/pelayanan"
                                 >Pelayanan</a
                             >
                         </li>
                         <li>
-                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('dokter*') ? 'active' : ''}}" href="/dokter"
-                                >Dokter</a
-                            >
-                        </li>
-                        <li>
-                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('kontak*') ? 'active' : ''}}" href="/kontak"
-                                >Kontak</a
+                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('pasien*') ? 'active' : ''}}" href="/pasien"
+                                >Data Pasien</a
                             >
                         </li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav>
                 <!-- .navbar -->
-                <nav class="navbar navbar-light bg-light">
-                    <div class="container-fluid">
-                        <ul>
-                            <li><a id="buttonHeader" class="nav-link scrollto" href="#services">Register</a></li>
-                            <li><a id="buttonHeader" class="nav-link scrollto" href="#services">Login</a></li>
-                            <li><a id="buttonHeader" class="nav-link scrollto" href="#services">Logout</a></li>
-                        </ul>
-                    </div>
-                </nav>
-             </div>
+                @auth
+                <div class="dropdown text-end">
+                  <a href="" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Selamat datang {{ auth()->user()->nama}}
+                  </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                      <li><a class="dropdown-item" href="/profil">Profil</a></li>
+                      <li><form action="/logout" method="post">
+                         {{csrf_field()}}
+                        <button type="submit" class="btn btn-info dropdown-item">Logout</button>
+                      </form></li>
+                    </ul>
+                </div>
+                @else
+                <div class="dropdown text-end">
+                  <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class='bx bxs-user bx-sm'></i>
+                  </a>
+                  <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="/login">Login</a></li>
+                  </ul>
+                </div>
+                @endauth
         </header>
         <!-- End Header -->
 

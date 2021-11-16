@@ -12,24 +12,17 @@ class GuestController extends Controller
         ]);
     }
 
-    public function tentang() {
-        return view('layouts_guest/about', [
-            'title' => 'Tentang']);
-    }
 
     public function pelayanan() {
         return view('layouts_guest/service', [
             'title' => 'Pelayanan']);
     }
 
-    public function dokter() {
-        return view('layouts_guest/doctor', [
-            'title' => 'Dokter']);
+     public function pasien() {
+        return view('layouts_guest/pasien', [
+            'title' => 'Data pasien']);
     }
 
-    public function kontak() {
-        return view('layouts_guest/contact', [
-            'title' => 'Kontak']);
-    }
+   
 
 }

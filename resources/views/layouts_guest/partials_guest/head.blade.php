@@ -35,7 +35,7 @@
             rel="stylesheet"
         />
 
-        /* CSS BIKIN SENDIRI */
+        <!-- css buatan sendiri -->
         <link
             href="{{ asset('guest/vendor/byMe/header.css')}}"
             rel="stylesheet"

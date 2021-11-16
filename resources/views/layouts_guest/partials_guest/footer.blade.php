@@ -23,6 +23,7 @@
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/">Home</a>
                                 </li>
+<<<<<<< HEAD
                                 <li >
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/tentang">About</a>
@@ -39,6 +40,8 @@
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/kontak">Contact</a>
                                 </li>
+=======
+>>>>>>> 20580cd (profil petugas)
                             </ul>
                         </div>
                     </div>
@@ -69,7 +72,7 @@
         <script src="{{ asset('guest/vendor/purecounter/purecounter.js')}}"></script>
         <script src="{{ asset('guest/vendor/swiper/swiper-bundle.min.js')}}"></script>
         
-        /* JS BIKIN SENDIRI */
+       <!--  /* JS BIKIN SENDIRI */ -->
         <script src="{{ asset('guest/vendor/byMe/header.js')}}"></script>
         
 
