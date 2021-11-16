@@ -73,6 +73,52 @@
                                     150 pasien
                                 </p>
                             </div>
+
+                                {{-- <div class="count-box">
+                                    <i class="far fa-hospital"></i>
+                                    <span
+                                        data-purecounter-start="0"
+                                        data-purecounter-end="26"
+                                        data-purecounter-duration="1"
+                                        class="purecounter"
+                                    ></span>
+                                    <p>
+                                        <strong>Melayani</strong> 
+                                        <br/> AAAAAAAAAAAAA
+                                    </p>
+                                </div>
+                            </div>
+
+                                <div class="count-box">
+                                    <i class="far fa-hospital"></i>
+                                    <span
+                                        data-purecounter-start="0"
+                                        data-purecounter-end="26"
+                                        data-purecounter-duration="1"
+                                        class="purecounter"
+                                    ></span>
+                                    <p>
+                                        <strong>Melayani</strong> 
+                                        <br/> BBBBBBBBBBBBBBBBB
+                                    </p>
+                                </div>
+                            </div>
+
+                                <div class="count-box">
+                                    <i class="far fa-hospital"></i>
+                                    <span
+                                        data-purecounter-start="0"
+                                        data-purecounter-end="26"
+                                        data-purecounter-duration="1"
+                                        class="purecounter"
+                                    ></span>
+                                    <p>
+                                        <strong>Melayani</strong> 
+                                        <br/> CCCCCCCCCCCCCCCCCCCCCCC
+                                    </p>
+                                </div>
+                            </div> --}}
+
                         </div>
                     </div>
                 </div>

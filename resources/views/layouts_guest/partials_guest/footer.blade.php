@@ -23,25 +23,17 @@
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/">Home</a>
                                 </li>
-<<<<<<< HEAD
+{{-- <<<<<<< HEAD --}}
                                 <li >
                                     <i class="bx bx-chevron-right"></i>
-                                    <a href="/tentang">About</a>
+                                    <a href="/pelayanan">Pelayanan</a>
                                 </li>
                                 <li >
                                     <i class="bx bx-chevron-right"></i>
-                                    <a href="/pelayanan">Services</a>
+                                    <a href="/data-pasien">Data Pasien</a>
                                 </li>
-                                <li >
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="/dokter">Doctors</a>
-                                </li>
-                                <li >
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="/kontak">Contact</a>
-                                </li>
-=======
->>>>>>> 20580cd (profil petugas)
+{{-- ======= --}}
+{{-- >>>>>>> 20580cd (profil petugas) --}}
                             </ul>
                         </div>
                     </div>

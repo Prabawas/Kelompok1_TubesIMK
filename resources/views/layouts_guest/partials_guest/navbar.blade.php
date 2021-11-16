@@ -37,7 +37,7 @@
                             >
                         </li>
                         <li>
-                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('pasien*') ? 'active' : ''}}" href="/pasien"
+                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('data-pasien*') ? 'active' : ''}}" href="/data-pasien"
                                 >Data Pasien</a
                             >
                         </li>
@@ -99,9 +99,9 @@
                                 berbagai penyakit umum. Dikelolah oleh Dr. Lapan H Tarigan.<br/> 
                                 Klinik ini sudah berdiri sejak Tahun 1997 selama hampir 24 tahun.
                             </p>
-                            <a {{ Request::is('tentang*') ? 'active' : ''}} href="/tentang" class="btn-get-started scrollto"
+                            {{-- <a {{ Request::is('tentang*') ? 'active' : ''}} href="/tentang" class="btn-get-started scrollto"
                                 >Lebih lanjut</a
-                            >
+                            > --}}
                         </div>
                     </div>
 

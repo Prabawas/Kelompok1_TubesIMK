@@ -25,23 +25,16 @@ use App\Http\Controllers\UserController;
 Route::get('/', [GuestController::class, 'beranda']);
 
 //Halaman service
-<<<<<<< HEAD
+// <<<<<<< HEAD
 Route::get('/pelayanan', [GuestController::class, 'pelayanan']); //->middleware('auth');
-
-//Halaman doctor
-Route::get('/dokter', [GuestController::class, 'dokter']);
-
-//Halaman Contact
-Route::get('/kontak', [GuestController::class, 'kontak']);
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-=======
-Route::get('/pelayanan', [GuestController::class, 'pelayanan']);
+// =======
 
 //Halaman data pasien
-Route::get('/pasien', [GuestController::class, 'pasien']);
+Route::get('/data-pasien', [GuestController::class, 'pasien']);
 
 //Halaman User
 Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
@@ -51,4 +44,4 @@ Route::post('/logout', [UserController::class, 'logoutAkun']);
 Route::get('/profil/{id}', [UserController::class, 'detail']);
 Route::get('/profil/edit/{id}', [UserController::class, 'edit']);
 Route::post('/profil/update/{id}', [UserController::class, 'update']);
->>>>>>> 20580cd (profil petugas)
+// >>>>>>> 20580cd (profil petugas)
