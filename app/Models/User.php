@@ -39,4 +39,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function pasien() {
+        return $this->hasMany(Pasien::class);    //relasi tabel user ke tabel posts. satu user memiliki banyak postingan.
+    }
 }
