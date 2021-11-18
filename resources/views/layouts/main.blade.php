@@ -13,15 +13,15 @@
             rel="apple-touch-icon"
         />
 
-        @include('layouts_guest/partials_guest/head')
+        @include('layouts/partials/head')
        
     </head>
 
     <body>
-       @include('layouts_guest/partials_guest/navbar')
+       @include('layouts/partials/navbar')
 
        @yield('content')
 
-      @include('layouts_guest/partials_guest/footer')
+      @include('layouts/partials/footer')
     </body>
 </html>

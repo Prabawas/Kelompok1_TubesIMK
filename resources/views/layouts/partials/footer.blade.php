@@ -23,7 +23,7 @@
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/">Home</a>
                                 </li>
-{{-- <<<<<<< HEAD --}}
+
                                 <li >
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/pelayanan">Pelayanan</a>
@@ -32,8 +32,6 @@
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/data-pasien">Data Pasien</a>
                                 </li>
-{{-- ======= --}}
-{{-- >>>>>>> 20580cd (profil petugas) --}}
                             </ul>
                         </div>
                     </div>

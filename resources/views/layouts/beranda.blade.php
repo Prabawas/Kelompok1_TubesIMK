@@ -1,4 +1,4 @@
-@extends('layouts_guest/main')
+@extends('layouts/main')
 
 @section('content')
          
@@ -17,15 +17,15 @@
                                 <i class="fas fa-user-md"></i>
                                 <span
                                     data-purecounter-start="0"
-                                    data-purecounter-end="3"
+                                    data-purecounter-end="4"
                                     data-purecounter-duration="1"
                                     class="purecounter"
                                 ></span>
 
                                 <p>
-                                    <strong>Petugas Kesehatan.</strong> 
+                                    <strong>Pelaku Kesehatan.</strong> 
                                     <br/>Terdapat 3 petugas
-                                    kesehatan
+                                    kesehatan dan 1 pemilik klinik
                                 </p>
                             </div>
                         </div>
@@ -41,7 +41,7 @@
                                 <i class="far fa-hospital"></i>
                                 <span
                                     data-purecounter-start="0"
-                                    data-purecounter-end="26"
+                                    data-purecounter-end="27"
                                     data-purecounter-duration="1"
                                     class="purecounter"
                                 ></span>
@@ -73,52 +73,6 @@
                                     150 pasien
                                 </p>
                             </div>
-
-                                {{-- <div class="count-box">
-                                    <i class="far fa-hospital"></i>
-                                    <span
-                                        data-purecounter-start="0"
-                                        data-purecounter-end="26"
-                                        data-purecounter-duration="1"
-                                        class="purecounter"
-                                    ></span>
-                                    <p>
-                                        <strong>Melayani</strong> 
-                                        <br/> AAAAAAAAAAAAA
-                                    </p>
-                                </div>
-                            </div>
-
-                                <div class="count-box">
-                                    <i class="far fa-hospital"></i>
-                                    <span
-                                        data-purecounter-start="0"
-                                        data-purecounter-end="26"
-                                        data-purecounter-duration="1"
-                                        class="purecounter"
-                                    ></span>
-                                    <p>
-                                        <strong>Melayani</strong> 
-                                        <br/> BBBBBBBBBBBBBBBBB
-                                    </p>
-                                </div>
-                            </div>
-
-                                <div class="count-box">
-                                    <i class="far fa-hospital"></i>
-                                    <span
-                                        data-purecounter-start="0"
-                                        data-purecounter-end="26"
-                                        data-purecounter-duration="1"
-                                        class="purecounter"
-                                    ></span>
-                                    <p>
-                                        <strong>Melayani</strong> 
-                                        <br/> CCCCCCCCCCCCCCCCCCCCCCC
-                                    </p>
-                                </div>
-                            </div> --}}
-
                         </div>
                     </div>
                 </div>

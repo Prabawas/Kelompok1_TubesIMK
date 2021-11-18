@@ -1,4 +1,4 @@
-@extends('layouts_guest/main')
+@extends('layouts/main')
 
 @section('content')
 	<section class="vh-100">
@@ -16,7 +16,7 @@
           <div class="row g-0">
             <div class="col-md-4 gradient-custom text-center text-dark mt-3">
               <img
-                src=" public/image/{{ $user->avatar }}"
+                src=" /image/{{ $user->avatar }}"
                 alt="..."
                 class="img-fluid my-2"
                 style="width: 120;"/>
@@ -30,9 +30,19 @@
                     <h6>Nama Lengkap</h6>
                     <p class="text-muted">{{$user->nama}}</p>
                   </div>
+                 <div class="col-6 mb-3">
+                    <h6>Tanggal Lahir</h6>
+                    <p class="text-muted">{{$user->tgl_lahir}}</p>
+                  </div>
+                </div>
+                <div class="row pt-1">
                   <div class="col-6 mb-3">
-                    <h6>NIK</h6>
-                    <p class="text-muted">{{$user->NIK}}</p>
+                    <h6>Jenis Kelamin</h6>
+                    <p class="text-muted">{{$user->jenisKelamin}}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>No. Hp</h6>
+                    <p class="text-muted">{{$user->telepon}}</p>
                   </div>
                 </div>
                 <div class="row pt-1">
@@ -40,9 +50,9 @@
                     <h6>Alamat</h6>
                     <p class="text-muted">{{$user->alamat}}</p>
                   </div>
-                  <div class="col-6 mb-3">
-                    <h6>No. Hp</h6>
-                    <p class="text-muted">{{$user->telepon}}</p>
+                   <div class="col-6 mb-3">
+                    <h6>Posisi</h6>
+                    <p class="text-muted">{{$user->posisi}}</p>
                   </div>
                 </div>
                 <hr class="mt-0 mb-4">
@@ -51,16 +61,12 @@
                     <h6>Email</h6>
                     <p class="text-muted">{{$user->email}}</p>
                   </div>
-                  <div class="col-6 mb-3">
-                    <h6>Tanggal Lahir</h6>
-                    <p class="text-muted">{{$user->tgl_lahir}}</p>
-                  </div>
                 </div>
                 <div class="row pt-1">
                   <div class="col-6 mb-3">
                   </div>
                   <div class="col-6 mb-3">
-                    <p><a href="/profil/edit/{{ $user->id }}" class="badge bg-primary text-decoration-none fs-6">Edit Profil</a></p>
+                    <p><a href="/profil/edit/{{ $user->id }}" class="badge bg-warning text-decoration-none fs-6">Edit Profil</a></p>
                   </div>
                 </div>
               </div>

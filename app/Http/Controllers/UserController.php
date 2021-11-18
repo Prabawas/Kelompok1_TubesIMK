@@ -16,6 +16,41 @@ class UserController extends Controller
     ]);
     }
 
+    public function register()
+    {
+        return view('user.register', [
+            'title' => 'registrasi petugas'
+        ]);
+    }
+
+    public function registerAkun(Request $request)
+    {
+        $regist = $request->validate([
+            'nama' => 'required',
+            'tgl_lahir' => 'required',
+            'jenisKelamin' => 'required',
+            'alamat' => 'required',
+            'telepon' => 'required | min:12 | max:12',
+            'avatar' => 'image | file | max:1024',
+            'posisi' => 'required',
+            'email' => 'required | email | unique:users',
+            'password' => 'required | min:6 | max:8',
+        ]);
+
+         if($request->hasFile('avatar')) {
+            // Mengambil gambar dan menyimpannya di folder tujuan dengan nama asli
+            $request->file('avatar')->move('image/', $request->file('avatar')->getClientOriginalName());
+            $regist['avatar'] = $request->file('avatar')->getClientOriginalName();
+           
+        }
+
+         $regist['password'] = bcrypt($regist['password']);    //Meng-enkripsi password
+
+          User::create($regist);
+          return redirect('/profil')->with('success', ' Petugas berhasil ditambah!');
+        
+    }
+
      public function login()
     {
         return view('user.login', [
@@ -79,8 +114,16 @@ class UserController extends Controller
             $user->save();
         }
 
-        return redirect('/profil')->with('edit', ' Profil berhasil di edit!');
-    
+        return redirect('/profil')->with('edit', ' Profil berhasil diedit!');
    }
+
+    public function delete($id) {
+        // Memilih data dari database berdasarkan id dan menghapusnya dengan fungsi delete()
+        // lalu kembali ke halaman data user
+        $users = User::find($id);
+        $users->delete();
+
+        return redirect('/profil')->with('hapus', ' Profil berhasil dihapus!');
+    }
     
 }

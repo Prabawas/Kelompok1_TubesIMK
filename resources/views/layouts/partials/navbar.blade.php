@@ -20,12 +20,6 @@
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top">
             <div class="container d-flex align-items-center">
-                <!-- <a href="index.html" class="logo me-auto"
-                    ><img src="{{ asset('guest/img/logo.png')}}" alt=""
-                /></a> -->
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
-
                 <nav id="navbar" class="navbar order-last order-lg-0 me-auto">
                     <ul>
                         <li>
@@ -52,6 +46,9 @@
                   </a>
                     <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
                       <li><a class="dropdown-item" href="/profil">Profil</a></li>
+                      @can('pemilik')
+                    <li><a class="dropdown-item" href="/register">Register</a></li>
+                  @endcan
                       <li><form action="/logout" method="post">
                          {{csrf_field()}}
                         <button type="submit" class="btn btn-info dropdown-item">Logout</button>

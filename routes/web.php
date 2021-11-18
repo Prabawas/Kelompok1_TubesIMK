@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PasienController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\UserController;
 
@@ -15,28 +16,21 @@ use App\Http\Controllers\UserController;
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
 
 
 //Halaman dashboard
 Route::get('/', [GuestController::class, 'beranda']);
 
-//Halaman service
-// <<<<<<< HEAD
-Route::get('/pelayanan', [GuestController::class, 'pelayanan']); //->middleware('auth');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// =======
+//daftar data pasien
+Route::get('/pelayanan', [PasienController::class, 'pelayanan'])->middleware('auth');
+Route::post('/pelayanan', [PasienController::class, 'registerPasien']);
 
 //Halaman data pasien
-Route::get('/data-pasien', [GuestController::class, 'pasien']);
+Route::get('/data-pasien', [PasienController::class, 'pasien'])->middleware('auth');
 
 //Halaman User
+Route::get('/register', [UserController::class, 'register'])->middleware('pemilik');
+Route::post('/register', [UserController::class, 'registerAkun'])->middleware('pemilik');
 Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [UserController::class, 'loginAkun']);
 Route::get('/profil', [UserController::class, 'profil']);
@@ -44,4 +38,5 @@ Route::post('/logout', [UserController::class, 'logoutAkun']);
 Route::get('/profil/{id}', [UserController::class, 'detail']);
 Route::get('/profil/edit/{id}', [UserController::class, 'edit']);
 Route::post('/profil/update/{id}', [UserController::class, 'update']);
-// >>>>>>> 20580cd (profil petugas)
+Route::post('/profil/delete/{id}', [UserController::class, 'delete']);
+

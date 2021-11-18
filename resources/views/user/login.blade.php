@@ -1,4 +1,4 @@
-@extends('layouts_guest/main')
+@extends('layouts/main')
 
 @section('content')
 	@if(session()->has('login')) <!-- pesan dari logincontroller php line 53 -->
