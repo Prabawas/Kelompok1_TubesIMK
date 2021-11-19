@@ -26,6 +26,11 @@
                             <a id="buttonHeader" class="nav-link scrollto {{ Request::is('/*') ? 'active' : ''}}" href="/">Beranda</a>
                         </li>
                         <li>
+                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('profil*') ? 'active' : ''}}" href="/profil"
+                                >Profil</a
+                            >
+                        </li>
+                        <li>
                             <a id="buttonHeader" class="nav-link scrollto {{ Request::is('pelayanan*') ? 'active' : ''}}" href="/pelayanan"
                                 >Pelayanan</a
                             >

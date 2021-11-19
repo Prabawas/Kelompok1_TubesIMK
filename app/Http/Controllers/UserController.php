@@ -114,6 +114,7 @@ class UserController extends Controller
             $user->save();
         }
 
+
         return redirect('/profil')->with('edit', ' Profil berhasil diedit!');
    }
 

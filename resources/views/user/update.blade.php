@@ -94,16 +94,6 @@
               </div>
             @enderror
           </div>
-
-           <div class="form-floating mb-3">
-          <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password" required="">
-          <label for="password">password</label>
-            @error('password')
-              <div class="invalid-feedback">
-                {{ $message }}
-              </div>
-            @enderror
-        </div>
           
           <button type="submit" class="btn btn-primary">Simpan profil</button>
         </form>
@@ -114,7 +104,7 @@
     <script>
 
       function previewImage() {
-        const image = document.querySelector('#foto_akun');
+        const image = document.querySelector('#avatar');
         const imgPreview = document.querySelector('.img-preview');
 
         imgPreview.style.display = 'block';

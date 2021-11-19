@@ -15,7 +15,8 @@ class CreatePasiensTable extends Migration
     {
         Schema::create('pasiens', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id')->unsigned();
+           $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict');
             $table->string('nama');
             $table->string('tgl_lahir');
             $table->string('umur');
@@ -25,8 +26,6 @@ class CreatePasiensTable extends Migration
             $table->string('riwayat');
             $table->text('gejala');
             $table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict');
         });
     }
 

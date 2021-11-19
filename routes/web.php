@@ -27,6 +27,10 @@ Route::post('/pelayanan', [PasienController::class, 'registerPasien']);
 
 //Halaman data pasien
 Route::get('/data-pasien', [PasienController::class, 'pasien'])->middleware('auth');
+Route::get('/data-pasien/{id}', [PasienController::class, 'detailPasien']);
+Route::get('/data-pasien/edit/{id}', [PasienController::class, 'editPasien']);
+Route::post('/data-pasien/update/{id}', [PasienController::class, 'updatePasien']);
+Route::post('/data-pasien/delete/{id}', [PasienController::class, 'deletePasien']);
 
 //Halaman User
 Route::get('/register', [UserController::class, 'register'])->middleware('pemilik');
