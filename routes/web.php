@@ -39,4 +39,3 @@ Route::get('/profil/{id}', [UserController::class, 'detail']);
 Route::get('/profil/edit/{id}', [UserController::class, 'edit']);
 Route::post('/profil/update/{id}', [UserController::class, 'update']);
 Route::post('/profil/delete/{id}', [UserController::class, 'delete']);
-
