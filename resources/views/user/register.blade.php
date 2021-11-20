@@ -105,7 +105,7 @@
 	 <script>
 	 	
       function previewImage() {
-        const image = document.querySelector('#gambar');
+        const image = document.querySelector('#avatar');
         const imgPreview = document.querySelector('.img-preview');
 
         imgPreview.style.display = 'block';

@@ -26,9 +26,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'kelompok1@gmail.com',
             'password' => bcrypt('password'),
             'pemilik' => 1,
-        ]);*/
+        ]);
 
-        User::factory(4)->create();
+        User::factory(3)->create();*/
 
         Pasien::factory(10)->create();
     }

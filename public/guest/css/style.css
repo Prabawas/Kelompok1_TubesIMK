@@ -1601,3 +1601,13 @@ section {
     padding: 15px;
     margin: auto;
 }
+
+.size {
+  width: 100%;
+  height: 100%;
+}
+
+.resizedbox {
+    width: 100%;
+    height: 150%;
+  }
