@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Pasien;
 use Illuminate\Support\Facades\Auth;
+use PDF;
 
 class PasienController extends Controller
 {
@@ -75,5 +76,14 @@ class PasienController extends Controller
         $pasien->delete();
 
         return redirect('/data-pasien')->with('delete', 'Data pasien berhasil dihapus');
+    }
+
+    public function exportPdf($id)
+    {
+        $pasien = Pasien::find($id);
+        view()->share('pasien', $pasien);
+        $pdf = PDF::loadview('pasien.datapasien-pdf');
+
+        return $pdf->stream('datapasien.pdf');
     }
 }

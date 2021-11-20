@@ -18,7 +18,7 @@ class PasienFactory extends Factory
             'tgl_lahir' => $this->faker->date('Y-m-d'),
             'umur' => $this->faker->numberBetween($min = 10, $max = 50),
             'jenisKelamin' => $this->faker->randomElement(['Laki-laki', 'Perempuan']),
-            'telepon' => $this->faker->e164PhoneNumber(),
+            'telepon' => $this->faker->numberBetween(1000000,10000000),
             'alamat' => $this->faker->address(),
             'riwayat' => $this->faker->sentence(mt_rand(5,25)),
             'gejala' => $this->faker->sentence(mt_rand(10,25)),

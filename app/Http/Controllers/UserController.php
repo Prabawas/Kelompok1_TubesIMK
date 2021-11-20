@@ -103,16 +103,36 @@ class UserController extends Controller
             'title' => 'edit profil']);
     }
 
-   public function update(Request $request, $id)
+   public function update(Request $request, User $user)
    {
-        $user = User::find($id);
-        $user->update($request->all());
-        if($request->hasFile('avatar')) {
+        // $user = User::find($id);
+        // $user->update($request->all());
+        // if($request->hasFile('avatar')) {
+        //     // Mengambil gambar dan menyimpannya di folder tujuan dengan nama asli
+        //     $request->file('avatar')->move('image/', $request->file('avatar')->getClientOriginalName());
+        //     $user->avatar = $request->file('avatar')->getClientOriginalName();
+        //     $user->save();
+        // }
+        $regist = $request->validate([
+            'nama' => 'required',
+            'tgl_lahir' => 'required',
+            'jenisKelamin' => 'required',
+            'alamat' => 'required',
+            'telepon' => 'required | min:12 | max:12',
+            'avatar' => 'image | file | max:1024',
+            'posisi' => 'required',
+            'email' => 'required | email',
+        ]);
+
+         if($request->hasFile('avatar')) {
             // Mengambil gambar dan menyimpannya di folder tujuan dengan nama asli
             $request->file('avatar')->move('image/', $request->file('avatar')->getClientOriginalName());
-            $user->avatar = $request->file('avatar')->getClientOriginalName();
-            $user->save();
+            $regist['avatar'] = $request->file('avatar')->getClientOriginalName();
+           
         }
+
+         User::where('id', $user->id)
+                ->update($regist);
 
 
         return redirect('/profil')->with('edit', ' Profil berhasil diedit!');

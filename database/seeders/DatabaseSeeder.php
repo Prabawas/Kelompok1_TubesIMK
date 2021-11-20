@@ -30,6 +30,6 @@ class DatabaseSeeder extends Seeder
 
         User::factory(3)->create();*/
 
-        Pasien::factory(20)->create();
+        Pasien::factory(10)->create();
     }
 }

@@ -3,6 +3,14 @@
 @section('content')
 	<section class="">
   <div class="container py-5 ">
+
+    <div class="row  ms-auto">
+      <div class="col md-4 mb-3 "></div>
+       <div class="col md-4 mb-3 "></div>
+       <div class="col md-4 mb-3 ">
+          <a class="btn btn-danger" href="/exportPdf/{{$pasien->id}}"> Export ke PDF</a>
+      </div>
+    </div>
   	 
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-lg-12 mb-4 mb-lg-0">
@@ -11,7 +19,8 @@
             <div class="col-md-9">
               <div class="card-body p-4">
                 <h6>Riwayat Pasien</h6> 
-                <small>Petugas {{$pasien->user->nama}}</small>
+                <small>Petugas {{$pasien->user->nama}}</small> <br/>
+                <small>Tanggal {{$pasien->created_at}}</small>
                 <hr class="mt-0 mb-4">
                 <div class="row pt-1">
                   <div class="col-4 mb-3">

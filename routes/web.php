@@ -32,6 +32,9 @@ Route::get('/data-pasien/edit/{id}', [PasienController::class, 'editPasien']);
 Route::post('/data-pasien/update/{id}', [PasienController::class, 'updatePasien']);
 Route::post('/data-pasien/delete/{id}', [PasienController::class, 'deletePasien']);
 
+//Export to PDF
+Route::get('/exportPdf/{id}', [PasienController::class, 'exportPdf']);
+
 //Halaman User
 Route::get('/register', [UserController::class, 'register'])->middleware('pemilik');
 Route::post('/register', [UserController::class, 'registerAkun'])->middleware('pemilik');
