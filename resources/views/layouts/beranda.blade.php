@@ -173,7 +173,7 @@
                                         ></i>
                                     </p>
                                     <img
-                                        src="{{ asset('guest/img/testimonials/testimonials-2.jpg')}}"
+                                        src="{{ asset('guest/img/avatar.png')}}"
                                         class="testimonial-img"
                                         alt=""
                                     />
@@ -205,7 +205,7 @@
                                         ></i>
                                     </p>
                                     <img
-                                        src="{{ asset('guest/img/testimonials/testimonials-1.jpg')}}"
+                                        src="{{ asset('guest/img/avatar.png')}}"
                                         class="testimonial-img"
                                         alt=""
                                     />
@@ -237,7 +237,7 @@
                                         ></i>
                                     </p>
                                     <img
-                                        src="{{ asset('guest/img/testimonials/testimonials-3.jpg')}}"
+                                        src="{{ asset('guest/img/avatar.png')}}"
                                         class="testimonial-img"
                                         alt=""
                                     />

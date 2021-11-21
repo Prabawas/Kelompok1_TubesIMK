@@ -65,7 +65,7 @@
                 <div class="row pt-1">
                   <div class="col-6 mb-3">
                     <div class="col-6 mb-3">
-                    <p><a href="/profil">Sebelumnya</a></p>
+                    <p><a href="/profil">Halaman Sebelumnya</a></p>
                   </div>
                   </div>
                   @can('pemilik')
