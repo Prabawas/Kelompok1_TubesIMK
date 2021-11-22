@@ -35,7 +35,7 @@
         </div>
       </div>
 
-        <table class="table table-striped table-sm ">
+        <table  class="table table-striped table-sm ">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -51,7 +51,7 @@
               <td>{{ $pasien->umur}}</td>
               <td>{{ $pasien->jenisKelamin}}</td>
                <td>
-                <a href="/data-pasien/{{ $pasien->id }}" class="badge bg-info"><i class='bx  bxs-like bxs-show bx-sm'></i></a>
+                <a href="/data-pasien/{{ $pasien->id }}" class="badge bg-info" target="_blank"><i class='bx  bxs-like bxs-show bx-sm'></i></a>
                 <a href="/data-pasien/edit/{{ $pasien->id }}" class="badge bg-warning"><i class='bx bxs-edit bx-sm'></i></a>
                 <form action="/data-pasien/delete/{{ $pasien->id }}" method="post" class="d-inline">
                   @csrf

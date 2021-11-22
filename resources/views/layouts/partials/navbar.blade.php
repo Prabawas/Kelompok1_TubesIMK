@@ -50,7 +50,7 @@
                     Selamat datang {{ auth()->user()->nama}}
                   </a>
                     <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                      <li><a class="dropdown-item" href="/profil">Profil</a></li>
+                      <li><a class="dropdown-item" href="/profil/{{ auth()->user()->id}}">Profil</a></li>
                       @can('pemilik')
                     <li><a class="dropdown-item" href="/register">Register</a></li>
                   @endcan
