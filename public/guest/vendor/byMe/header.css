@@ -1,3 +1,22 @@
 .header-bg {
     background-color: #ccc;
 }
+
+/* form login */
+.formLogin {
+    font-family: "Poppins", sans-serif;
+    color: #4a4a4a;
+}
+
+::placeholder {
+    color: #9a9a9a;
+    font-weight: 400;
+}
+
+.eyeLogin {
+    position: absolute;
+    right: 400px;
+    /* transform: translate(0, -50%); */
+    /* bottom: 450px; */
+    cursor: pointer;
+}

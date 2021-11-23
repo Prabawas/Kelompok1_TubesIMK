@@ -13,20 +13,23 @@
 			<h1 class="h3 mb-3 text-center" style="font-family: monospace;">Login</h1>
 			  <form action="/login" method="post">
 			  	{{ csrf_field() }}<!-- untuk mengenerate token agar user bisa masuk -->
-			  	<div class="form-floating">
-			      <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" required="" value="{{ old('email') }}">
-			      <label for="email">Email</label>
-			      	 @error('email') <!-- kalau user salah memasukkan data akan muncul pesan eror -->
-					      <div class="invalid-feedback">
-					      	{{ $message }}
-					      </div>
-				      @enderror
-			    </div>
-			    <div class="form-floating">
-			      <input type="password" name="password" class="form-control" id="password" placeholder="password" required="">
-			      <label for="password">Password</label>
-			    </div>
-
+				  {{-- <br><br> --}}
+			  	<div class="formLogin">
+					<div class="form-floating">
+					<input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" required="" value="{{ old('email') }}">
+					<label for="email">Email</label>
+						@error('email') <!-- kalau user salah memasukkan data akan muncul pesan eror -->
+							<div class="invalid-feedback">
+								{{ $message }}
+							</div>
+						@enderror
+					</div>
+					<div class="form-floating">
+					<input type="password" name="password" class="form-control" id="password" placeholder="password" required="">
+					<label for="password">Password</label>
+					</div>
+					<span class="eyeLogin"><i class="fas fa-eye" id="eye"></i></span>
+				</div>
 			    <button class="w-100 btn btn-lg btn-primary" type="submit" style="font-family: monospace;">Login</button>
 			   </form>
 		</main>
