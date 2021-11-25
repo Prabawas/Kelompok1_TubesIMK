@@ -15,8 +15,8 @@
 
 .eyeLogin {
     position: absolute;
-    right: 400px;
+    right: 450px;
     /* transform: translate(0, -50%); */
-    /* bottom: 450px; */
+    /* bottom: 1000px; */
     cursor: pointer;
 }

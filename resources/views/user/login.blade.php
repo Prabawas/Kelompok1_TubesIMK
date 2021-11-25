@@ -28,7 +28,9 @@
 					<input type="password" name="password" class="form-control" id="password" placeholder="password" required="">
 					<label for="password">Password</label>
 					</div>
-					<span class="eyeLogin"><i class="fas fa-eye" id="eye"></i></span>
+					<div class="eye-lock">
+						<div class="fa fa-lock"></div>
+					</div>
 				</div>
 			    <button class="w-100 btn btn-lg btn-primary" type="submit" style="font-family: monospace;">Login</button>
 			   </form>
