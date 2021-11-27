@@ -26,6 +26,64 @@
       </div>
     @endif
 
+        {{-- menampilkan data pasien yang ada didalam DATABASE --}}
+        <section id="counts" class="counts">
+          <div class="container" data-aos="fade-up">
+              <div class="row no-gutters">
+                  <div
+                      class="
+                          col-lg-4 col-md-5
+                          d-md-flex
+                          align-items-md-stretch
+                      "
+                  >
+                      <div class="count-box">
+                          <i class="fas fa-user-md"></i>
+                          <span
+                              data-purecounter-start="0"
+                              data-purecounter-end="4"
+                              data-purecounter-duration="1"
+                              class="purecounter"
+                          ></span>
+
+                          <p>
+                            @php
+                             $dataPasien
+                            @endphp
+                              <strong>Pelaku Kesehatan.</strong> 
+                              <br/>Terdapat 3 petugas
+                              kesehatan dan 1 pemilik klinik
+                          </p>
+                      </div>
+                  </div>
+
+                  <div
+                      class="
+                          col-lg-4 col-md-5
+                          d-md-flex
+                          align-items-md-stretch
+                      "
+                  >
+                      <div class="count-box">
+                          <i class="fas fa-award"></i>
+                          {{-- mengambil data total pasien --}}
+                        
+                          <span
+                              data-purecounter-start="0"
+                              data-purecounter-end="150"
+                              data-purecounter-duration="1"
+                              class="purecounter"
+                          ></span>
+                          <p>
+                              <strong>Total Pasien</strong>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- End Counts Section -->
+
       <div class="row justify-content-end mt-3 mb-5">
         <div class="col-md-6">
           <form class="d-flex" action="/data-pasien" method="get">

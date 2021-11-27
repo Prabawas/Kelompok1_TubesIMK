@@ -7,12 +7,15 @@ use App\Models\User;
 use App\Models\Pasien;
 use Illuminate\Support\Facades\Auth;
 use PDF;
+use app\Models\hitungPasien;
 
 class PasienController extends Controller
 {
-    public function pelayanan() {
+    public function pelayanan()
+    {
         return view('pasien.register', [
-            'title' => 'Data Pasien']);
+            'title' => 'Data Pasien'
+        ]);
     }
 
     public function registerPasien(Request $request)
@@ -35,7 +38,8 @@ class PasienController extends Controller
         return redirect('/data-pasien')->with('success', 'Data Pasien berhasil ditambahkan!');
     }
 
-     public function pasien() {
+    public function pasien()
+    {
         //filter diambil dari model pasien untuk melakukan searching
         return view('pasien.dataPasien', [
             'title' => 'Data pasien',
@@ -45,21 +49,23 @@ class PasienController extends Controller
 
     public function detailPasien($id)
     {
-         $pasiens = Pasien::find($id);
+        $pasiens = Pasien::find($id);
 
         return view('pasien.detailPasien', [
             'pasien' => $pasiens,
-            'title' => 'detail data pasien']);
+            'title' => 'detail data pasien'
+        ]);
     }
 
-    public function editPasien($id) 
-  {
+    public function editPasien($id)
+    {
         // Mengambil data dari database berdasarkan id yang dipilih lalu membuka halaman update
         $pasiens = Pasien::find($id);
 
         return view('pasien.updatePasien', [
             'pasien' => $pasiens,
-            'title' => 'data pasien']);
+            'title' => 'data pasien'
+        ]);
     }
 
     public function updatePasien(Request $request, $id)
@@ -85,5 +91,12 @@ class PasienController extends Controller
         $pdf = PDF::loadview('pasien.datapasien-pdf');
 
         return $pdf->stream('datapasien.pdf');
+    }
+
+    public function hitungPasien()
+    {
+        $dataPasien = Pasien::all();
+        return $dataPasien;
+        // return view::make('index')->with('count', $dataPasien);
     }
 }
