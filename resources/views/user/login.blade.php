@@ -28,9 +28,11 @@
 					<input type="password" name="password" class="form-control" id="password" placeholder="password" required="">
 					<label for="password">Password</label>
 					</div>
-					<div class="eye-lock">
-						<div class="fa fa-lock"></div>
+					@error('password') <!-- kalau user salah memasukkan data akan muncul pesan eror -->
+					<div class="invalid-feedback">
+						{{ $message }}
 					</div>
+				@enderror
 				</div>
 			    <button class="w-100 btn btn-lg btn-primary" type="submit" style="font-family: monospace;">Login</button>
 			   </form>

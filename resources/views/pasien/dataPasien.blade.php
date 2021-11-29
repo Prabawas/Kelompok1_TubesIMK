@@ -1,3 +1,4 @@
+
 @extends('layouts/main')
 
 @section('content')
@@ -47,9 +48,6 @@
                           ></span>
 
                           <p>
-                            @php
-                             $dataPasien
-                            @endphp
                               <strong>Pelaku Kesehatan.</strong> 
                               <br/>Terdapat 3 petugas
                               kesehatan dan 1 pemilik klinik
