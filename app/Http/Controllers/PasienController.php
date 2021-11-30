@@ -26,7 +26,7 @@ class PasienController extends Controller
             'tgl_lahir' => 'required',
             'umur' => 'required',
             'jenisKelamin' => 'required',
-            'telepon' => 'required | min:12 | max:12',
+            'telepon' => 'required | min:13 | max:13',
             'alamat' => 'required',
             'riwayat' => 'required',
             'gejala' => 'required | max:256',
@@ -43,7 +43,7 @@ class PasienController extends Controller
         //filter diambil dari model pasien untuk melakukan searching
         return view('pasien.dataPasien', [
             'title' => 'Data pasien',
-            'pasiens' => Pasien::orderBy('nama')->filter(request(['cari']))->paginate(7)
+            'pasiens' => Pasien::orderBy('nama')->filter(request(['cari']))->paginate(7)->withQueryString()
         ]);
     }
 
@@ -92,11 +92,5 @@ class PasienController extends Controller
 
         return $pdf->stream('datapasien.pdf');
     }
-
-    public function hitungPasien()
-    {
-        $dataPasien = Pasien::all();
-        return $dataPasien;
-        // return view::make('index')->with('count', $dataPasien);
-    }
 }
+ 

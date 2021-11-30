@@ -23,6 +23,10 @@
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/">Home</a>
                                 </li>
+                                <li >
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="/profil">Profil</a>
+                                </li>
 
                                 <li >
                                     <i class="bx bx-chevron-right"></i>

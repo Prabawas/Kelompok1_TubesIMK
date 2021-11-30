@@ -30,50 +30,26 @@
         {{-- menampilkan data pasien yang ada didalam DATABASE --}}
         <section id="counts" class="counts">
           <div class="container" data-aos="fade-up">
-              <div class="row no-gutters">
-                  <div
-                      class="
-                          col-lg-4 col-md-5
-                          d-md-flex
-                          align-items-md-stretch
-                      "
-                  >
+              <div class="row no-gutters justify-content-center">
+                  <div class=" col-lg-4 col-md-5 d-md-flex align-items-md-stretch">
                       <div class="count-box">
                           <i class="fas fa-user-md"></i>
-                          <span
-                              data-purecounter-start="0"
-                              data-purecounter-end="4"
-                              data-purecounter-duration="1"
-                              class="purecounter"
-                          ></span>
-
-                          <p>
-                              <strong>Pelaku Kesehatan.</strong> 
-                              <br/>Terdapat 3 petugas
-                              kesehatan dan 1 pemilik klinik
+                          <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+                          <p> <strong>Pelaku Kesehatan.</strong><br/>
+                            Terdapat 3 petugas
+                            kesehatan dan 1 pemilik klinik
                           </p>
                       </div>
                   </div>
 
-                  <div
-                      class="
-                          col-lg-4 col-md-5
-                          d-md-flex
-                          align-items-md-stretch
-                      "
-                  >
+                  <div class=" col-lg-4 col-md-5 d-md-flex align-items-md-stretch">
                       <div class="count-box">
                           <i class="fas fa-award"></i>
                           {{-- mengambil data total pasien --}}
-                        
                           <span
-                              data-purecounter-start="0"
-                              data-purecounter-end="150"
-                              data-purecounter-duration="1"
-                              class="purecounter"
-                          ></span>
+                          >{{$pasiens->count()}}</span>
                           <p>
-                              <strong>Total Pasien</strong>
+                              <strong>Total Pasien/halaman</strong>
                           </p>
                       </div>
                   </div>
@@ -88,6 +64,9 @@
           <input class="form-control me-2" type="text" placeholder="Cari .." name="cari" value="{{ request('cari') }}">
           <button class="btn btn-info" type="submit">Cari</button>
         </form>
+        <div class="col-lg-4 mt-3 ms-auto ">
+          <a href="/pelayanan" ><button class="btn btn-primary">Tambah pasien</button></a>
+        </div>
         </div>
       </div>
 

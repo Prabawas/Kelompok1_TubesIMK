@@ -1,12 +1,15 @@
 @extends('layouts/main')
 
 @section('content')
+<div class="container mt-3">
 	@if(session()->has('login')) <!-- pesan dari logincontroller php line 53 -->
-			<div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+			<div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
 				{{ session('login') }}
 				<button type="button" class="btn-close" data-bs-dismiss="alert" arial-label="close"></button>
 			</div>
 		@endif
+</div>
+	
 	
 	
 		<main class="form-signin">

@@ -51,15 +51,6 @@
             @enderror
           </div>
 
-          {{-- <div class="mb-3">
-               <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
-            <select class="form-select" name="jenisKelamin" value="{{old('jenisKelamin', $users->jenisKelamin)}}">
-              <option value="hidden" selected>Pilih</option>
-                <option value="Laki-laki">Laki-laki</option>
-                <option value="Perempuan">Perempuan</option>
-            </select>
-          </div> --}}
-
           <div class="mb-3">
             <label for="alamat" class="form-label">alamat lengkap</label>
             <input type="text" class="form-control @error('alamat') is-invalid @enderror" id="alamat" name="alamat" autofocus="" required="" value="{{ old('alamat', $users->alamat) }}">
@@ -89,15 +80,6 @@
               </div>
             @enderror
           </div>
-
-           {{-- <div class="mb-3">
-           <label for="posisi" class="form-label">Posisi</label>
-            <select class="form-select" name="posisi" value="{{old ('posisi', $users->posisi)}}">
-              <option value="hidden" selected aria-readonly="true">Pilih</option>
-                <option value="Pemilik Klinik">Pemilik Klinik</option>
-                <option value="Petugas Klinik">Petugas Klinik</option>
-            </select>
-          </div> --}}
 
           <div class="mb-3">
             <label for="avatar" class="form-label">Foto Profil</label>

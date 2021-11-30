@@ -45,24 +45,16 @@
 		      </div>
 		      <div class="row pt-1">
 
-				<div class="mb-3">
-					<label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
-					<input type="jenisKelamin" class="form-control @error('jenisKelamin') is-invalid @enderror" id="jenisKelamin" name="jenisKelamin" autofocus="" readonly required="" value="{{ old('jenisKelamin', $pasien->jenisKelamin) }}">
-					 @error('jenisKelamin') <!-- kalau users salah memasukkan data akan muncul pesan eror -->
-					  <div class="invalid-feedback">
-						{{ $message }}
-					  </div>
-					@enderror
-				  </div>
+						<div class=" col-4 mb-3">
+							<label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+							<input type="jenisKelamin" class="form-control @error('jenisKelamin') is-invalid @enderror" id="jenisKelamin" name="jenisKelamin" autofocus="" readonly required="" value="{{ old('jenisKelamin', $pasien->jenisKelamin) }}">
+							 @error('jenisKelamin') <!-- kalau users salah memasukkan data akan muncul pesan eror -->
+							  <div class="invalid-feedback">
+								{{ $message }}
+							  </div>
+							@enderror
+						  </div>
 
-		          {{-- <div class=" col-4 mb-3">
-		            <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
-			            <select class="form-select" name="jenisKelamin">
-			              <option value="hidden" selected>Pilih</option>
-			                <option value="{{old('jenisKelamin', $pasien->jenisKelamin) == 'Laki-laki' ? 'selected' : ''}}">Laki-laki</option>
-			                <option value="{{old('jenisKelamin', $pasien->jenisKelamin) == 'Perempuan' ? 'selected' : ''}}">Perempuan</option>
-			            </select>
-		          </div> --}}
 		           <div class=" col-4 mb-3">
 		            <label for="telepon" class="form-label">Telepon</label>
 		            <input type="number" class="form-control @error('telepon') is-invalid @enderror" id="telepon" name="telepon" autofocus="" required="" value="{{ old('telepon', $pasien->telepon) }}">
@@ -72,6 +64,7 @@
 		              </div>
 		            @enderror
 		          </div>
+
 		          <div class=" col-4 mb-3">
 		            <label for="alamat" class="form-label">Alamat</label>
 		            <input type="text" class="form-control @error('alamat') is-invalid @enderror" id="alamat" name="alamat" autofocus="" required="" value="{{ old('alamat', $pasien->alamat) }}">
@@ -82,6 +75,7 @@
 		            @enderror
 		          </div>
 		      </div>
+
 		      <div class="row pt-1">
 		          <div class=" col-12 mb-3">
 		            <label for="riwayat" class="form-label">Riwayat Penyakit</label>
@@ -93,6 +87,7 @@
 		            @enderror
 		          </div>
 		      </div>
+		      
 		      <div class="row pt-1 mb-3">
 		          <div class=" col-12 mb-3 mt-4">
 		            <label for="gejala" class="form-label">Gejala yang dialami</label>

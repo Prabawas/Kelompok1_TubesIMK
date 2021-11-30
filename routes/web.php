@@ -40,7 +40,7 @@ Route::get('/register', [UserController::class, 'register'])->middleware('pemili
 Route::post('/register', [UserController::class, 'registerAkun'])->middleware('pemilik');
 Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [UserController::class, 'loginAkun']);
-Route::get('/profil', [UserController::class, 'profil']);
+Route::get('/profil', [UserController::class, 'profil'])->middleware('auth');
 Route::post('/logout', [UserController::class, 'logoutAkun']);
 Route::get('/profil/{id}', [UserController::class, 'detail']);
 Route::get('/profil/edit/{id}', [UserController::class, 'edit']);
