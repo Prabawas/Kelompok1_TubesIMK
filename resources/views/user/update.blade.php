@@ -23,7 +23,7 @@
 
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" autofocus="" required="" value="{{ old('email', $users->email) }}">
+            <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" autofocus="" readonly required="" value="{{ old('email', $users->email) }}">
              @error('email') <!-- kalau users salah memasukkan data akan muncul pesan eror -->
               <div class="invalid-feedback">
                 {{ $message }}
@@ -42,13 +42,23 @@
           </div>
 
           <div class="mb-3">
+            <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+            <input type="jenisKelamin" class="form-control @error('jenisKelamin') is-invalid @enderror" id="jenisKelamin" name="jenisKelamin" autofocus="" readonly required="" value="{{ old('jenisKelamin', $users->jenisKelamin) }}">
+             @error('jenisKelamin') <!-- kalau users salah memasukkan data akan muncul pesan eror -->
+              <div class="invalid-feedback">
+                {{ $message }}
+              </div>
+            @enderror
+          </div>
+
+          {{-- <div class="mb-3">
                <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
             <select class="form-select" name="jenisKelamin" value="{{old('jenisKelamin', $users->jenisKelamin)}}">
               <option value="hidden" selected>Pilih</option>
                 <option value="Laki-laki">Laki-laki</option>
                 <option value="Perempuan">Perempuan</option>
             </select>
-          </div>
+          </div> --}}
 
           <div class="mb-3">
             <label for="alamat" class="form-label">alamat lengkap</label>
@@ -70,14 +80,24 @@
             @enderror
           </div>
 
-           <div class="mb-3">
+          <div class="mb-3">
+            <label for="posisi" class="form-label">Posisi</label>
+            <input type="posisi" class="form-control @error('posisi') is-invalid @enderror" id="posisi" name="posisi" autofocus="" readonly required="" value="{{ old('posisi', $users->posisi) }}">
+             @error('posisi') <!-- kalau users salah memasukkan data akan muncul pesan eror -->
+              <div class="invalid-feedback">
+                {{ $message }}
+              </div>
+            @enderror
+          </div>
+
+           {{-- <div class="mb-3">
            <label for="posisi" class="form-label">Posisi</label>
             <select class="form-select" name="posisi" value="{{old ('posisi', $users->posisi)}}">
-              <option value="hidden" selected>Pilih</option>
+              <option value="hidden" selected aria-readonly="true">Pilih</option>
                 <option value="Pemilik Klinik">Pemilik Klinik</option>
                 <option value="Petugas Klinik">Petugas Klinik</option>
             </select>
-          </div>
+          </div> --}}
 
           <div class="mb-3">
             <label for="avatar" class="form-label">Foto Profil</label>
