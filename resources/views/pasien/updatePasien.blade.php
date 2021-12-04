@@ -47,7 +47,7 @@
 
 						<div class=" col-4 mb-3">
 							<label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
-							<input type="jenisKelamin" class="form-control @error('jenisKelamin') is-invalid @enderror" id="jenisKelamin" name="jenisKelamin" autofocus="" readonly required="" value="{{ old('jenisKelamin', $pasien->jenisKelamin) }}">
+							<input type="jenisKelamin" class="form-control @error('jenisKelamin') is-invalid @enderror" id="jenisKelamin" name="jenisKelamin" autofocus="" readonly value="{{ old('jenisKelamin', $pasien->jenisKelamin) }}">
 							 @error('jenisKelamin') <!-- kalau users salah memasukkan data akan muncul pesan eror -->
 							  <div class="invalid-feedback">
 								{{ $message }}

@@ -72,14 +72,28 @@
           </div>
 
           <div class="mb-3">
-            <label for="posisi" class="form-label">Posisi</label>
-            <input type="posisi" class="form-control @error('posisi') is-invalid @enderror" id="posisi" name="posisi" autofocus="" readonly required="" value="{{ old('posisi', $users->posisi) }}">
+            <label for="posisi" class="form-label">Posisi Lama</label>
+            <input type="posisi" class="form-control @error('posisi') is-invalid @enderror" id="posisi" name="posisi" autofocus="" readonly value="{{ old('posisi', $users->posisi) }}">
              @error('posisi') <!-- kalau users salah memasukkan data akan muncul pesan eror -->
               <div class="invalid-feedback">
                 {{ $message }}
               </div>
             @enderror
           </div>
+
+            <div class="mb-3">
+              <label for="posisi" class="form-label">Posisi Baru</label>
+              {{-- <input type="posisi" class="form-control @error('posisi') is-invalid @enderror" id="posisi" name="posisi" autofocus=""  required="" value="{{ old('posisi', $users->posisi) }}"> --}}
+              <select name="posisi" id="posisi" class="form-control" autofocus=""  required="" value="{{ old('posisi', $users->posisi) }}">
+                  <option value="Pemilik Klinik" id="posisi">Pemilik Klinik</option>
+                  <option value="Petugas Klinik" id="posisi">Petugas Klinik</option>
+              </select>
+              @error('posisi') <!-- kalau users salah memasukkan data akan muncul pesan eror -->
+                <div class="invalid-feedback">
+                  {{ $message }}
+                </div>
+              @enderror
+            </div>
 
           <div class="mb-3">
             <label for="avatar" class="form-label">Foto Profil</label>

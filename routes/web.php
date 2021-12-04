@@ -21,6 +21,9 @@ use App\Http\Controllers\UserController;
 //Halaman dashboard
 Route::get('/', [GuestController::class, 'beranda']);
 
+// Halaman Panduan
+Route::get('/panduan', [GuestController::class, 'panduan']);
+
 //daftar data pasien
 Route::get('/pelayanan', [PasienController::class, 'pelayanan'])->middleware('auth');
 Route::post('/pelayanan', [PasienController::class, 'registerPasien']);

@@ -36,6 +36,10 @@
                                     <i class="bx bx-chevron-right"></i>
                                     <a href="/data-pasien">Data Pasien</a>
                                 </li>
+                                <li >
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="/panduan">Panduan</a>
+                                </li>
                             </ul>
                         </div>
                     </div>                      

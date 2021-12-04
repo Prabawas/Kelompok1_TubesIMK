@@ -40,6 +40,11 @@
                                 >Data Pasien</a
                             >
                         </li>
+                        <li>
+                            <a id="buttonHeader" class="nav-link scrollto {{ Request::is('panduan*') ? 'active' : ''}}" href="/panduan"
+                                >Panduan</a
+                            >
+                        </li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav>
@@ -47,7 +52,7 @@
                 @auth
                 <div class="dropdown text-end">
                   <a href="" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Selamat datang {{ auth()->user()->nama}}
+                    Selamat datang {{ auth()->user()->posisi}} |{{ auth()->user()->nama}}
                   </a>
                     <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
                       <li><a class="dropdown-item" href="/profil/{{ auth()->user()->id}}">Profil</a></li>
