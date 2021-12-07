@@ -29,7 +29,10 @@
 					</div>
 					<div class="form-floating">
 					<input type="password" name="password" class="form-control" id="password" placeholder="password" required="">
-					{{-- <a href="{{route('password.request')}}" style="color: blue">Lupa Password</a> --}}
+					
+					{{-- Lupa Password --}}
+					<a href="{{ url('/forgot_password') }}">Lupa Password</a>
+		
 					<label for="password">Password</label>
 					</div>
 					@error('password') <!-- kalau user salah memasukkan data akan muncul pesan eror -->

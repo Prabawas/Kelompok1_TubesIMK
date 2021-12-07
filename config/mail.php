@@ -91,9 +91,23 @@ return [
     |
     */
 
+    'stream' => [
+
+        'ssl' => [
+
+            'allow_self_signed' => true,
+
+            'verify_peer' => false,
+
+            'verify_peer_name' => false,
+
+        ],
+
+    ],
+
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'afdoni.prabawa.said319@students.usu.ac.id'),
+        'name' => env('MAIL_FROM_NAME', 'LARAVEL'),
     ],
 
     /*

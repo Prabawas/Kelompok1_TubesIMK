@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Auth\ForgotPasswordController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PasienController;
 use App\Http\Controllers\GuestController;
+use App\Http\Controllers\LupaPassword;
 use App\Http\Controllers\UserController;
 
 /*
@@ -49,3 +51,7 @@ Route::get('/profil/{id}', [UserController::class, 'detail']);
 Route::get('/profil/edit/{id}', [UserController::class, 'edit']);
 Route::post('/profil/update/{id}', [UserController::class, 'update']);
 Route::post('/profil/delete/{id}', [UserController::class, 'delete']);
+
+// Forgot password
+Route::get('/forgot_password', [LupaPassword::class, 'lupa']);
+Route::post('/forgot_password', [LupaPassword::class, 'password']);
