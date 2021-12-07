@@ -9,9 +9,21 @@
                         <h1>Panduan Pemakaian Web Rekap Data</h1>
                         <hr>
                 </div>
+                <br>
+                        <div class="navigasi-daftar">
+                                <h5>Daftar Isi : </h5>
+                                <ul>
+                                        <li><a href="#1">Cara Login Petugas dan Pemilik</a></li>
+                                        <li><a href="#2">Cara Rekap Pasien</a></li>
+                                        <li><a href="#3">Pengaturan Profil</a></li>
+                                        <li><a href="#4">Registrasi Petugas Oleh Admin</a></li>
+                                        <li><a href="#5">Cara menambahkan Petugas</a></li>
+                                </ul>
+                        </div>
+                <br>
                 <div class="login">
                         <br><br>
-                        <h3>Cara Login Petugas dan Pemilik</h3>
+                        <h3 id="1">Cara Login Petugas dan Pemilik</h3>
                         <p>Untuk para petugas atau pun pemilik yang ingin login kedalam web
                                 bisa menggunakan akun yang sudah dibuat sebelumnya. 
                            Berikut tata cara login :
@@ -26,7 +38,7 @@
 
                 <div class="rekap-pasien">
                         <br><br>
-                        <h3>Cara Rekap Pasien</h3>
+                        <h3 id="2">Cara Rekap Pasien</h3>
                         <p>
                                 <strong>Note</strong> Untuk rekap data pasien hanya bisa dilakukan jika anda sudah melakukakan login. 
                                 Jika sudah login maka anda sudah bisa akses button pelayanan untuk rekap data pasien. Dan untuk semua data 
@@ -50,21 +62,21 @@
 
                 <div class="petugas">
                         <br><br>
-                        <h3>Pengaturan Profil</h3>
+                        <h3 id="3">Pengaturan Profil</h3>
                         <p>Pada pengaturan profil ini hanya bisa dilakukan oleh Admin/petugas klinik saja. Untuk petugas hanya bisa melakukan cek pada menu profil.</p>
                         <p>Pada Admin/Pemilik Klinik bisa mengedit profil sendiri dan juga edit para petugas nya yang bekerja pada kliniknya.</p>
                 </div>
 
                 <div class="register-petugas">
                         <br><br>
-                        <h3>Registrasi Petugas Oleh Admin</h3>
+                        <h3 id="4">Registrasi Petugas Oleh Admin</h3>
                         <p>
                                 Ketika suatu saat ada penambahan jumlah petugas atau pengurangan jumlah petugas.Yang berhak untuk melakukan sistem ini adalah Pemilik Klinik
                                 Hanya Pemilik klinik lah yang berwenang untuk bisa mengubah, mengedit, dan menghapus para petugasnya.
 
                                 <br>
                                 <br>
-                                <h5>Cara menambahkan Petugas : </h5>
+                                <h5 id="5">Cara menambahkan Petugas : </h5>
                                 <ol>
                                         <li>Yang pertama yaitu <strong>LOGIN</strong> sebagai pemilik klinik <br><img src="{{ asset('guest/img/panduan/petugas-1.png')}}" alt="" width="750px" height="400px"></li>
                                         <li>Lalu Klik Profil yang ada di kiri atas, klik pada menu register.Maka pemilik Klinik akan diarahkan ke halaman register petugas <br><img src="{{ asset('guest/img/panduan/petugas-2.png')}}" alt="" width="750px" height="400px"></li>
