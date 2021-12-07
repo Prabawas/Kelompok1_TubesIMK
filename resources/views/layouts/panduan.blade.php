@@ -17,7 +17,6 @@
                                         <li><a href="#2">Cara Rekap Pasien</a></li>
                                         <li><a href="#3">Pengaturan Profil</a></li>
                                         <li><a href="#4">Registrasi Petugas Oleh Admin</a></li>
-                                        <li><a href="#5">Cara menambahkan Petugas</a></li>
                                 </ul>
                         </div>
                 <br>
