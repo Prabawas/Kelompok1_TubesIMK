@@ -1,7 +1,7 @@
 @extends('layouts/main')
 
 @section('content')
-<div class="container mt-3">
+<div class="container mt-5">
 	@if(session()->has('login')) <!-- pesan dari logincontroller php line 53 -->
 			<div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
 				{{ session('login') }}

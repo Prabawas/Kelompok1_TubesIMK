@@ -100,15 +100,12 @@
                         "
                     >
                         <div class="container text-center">
-                            <h2>Selamat datang di <span>Klinik Ora Et Labora</span></h2>
+                            <h2>Klinik Ora Et Labora</h2><span>Rekap Data Pasien</span>
                             <p class="pag">
-                                Klinik Ora Et Labora merupakan klinik pratama yang menangani
+                                Klinik Ora Et Labora merupakan klinik yang menangani
                                 berbagai penyakit umum. Dikelolah oleh Dr. Lapan H Tarigan.<br/> 
                                 Klinik ini sudah berdiri sejak Tahun 1997 selama hampir 24 tahun.
                             </p>
-                            {{-- <a {{ Request::is('tentang*') ? 'active' : ''}} href="/tentang" class="btn-get-started scrollto"
-                                >Lebih lanjut</a
-                            > --}}
                         </div>
                     </div>
 
@@ -157,3 +154,4 @@
             </div>
         </section>
         <!-- End Hero -->
+

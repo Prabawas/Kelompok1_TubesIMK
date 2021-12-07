@@ -1,7 +1,8 @@
 @extends('layouts/main')
 
 @section('content')
-         
+
+<div class="container mt-5">
         <div class="content">
                 <div class="judul">
                         <br><br>
@@ -15,9 +16,9 @@
                                 bisa menggunakan akun yang sudah dibuat sebelumnya. 
                            Berikut tata cara login :
                            <ol>
-                                   <li>Masuk ke halaman login dengan klik button profil, lalu klik login pada navbar <br><img src="{{ asset('guest/img/panduan/login-1.png')}}" alt="" width="600px" height="400px"></li>
-                                   <li>Setelah masuk ke halaman Login. Scroll kebawah lalu masukkan email dan password dengan benar. <img src="{{ asset('guest/img/panduan/login-2.png')}}" alt="" width="700px" height="400px"></li>
-                                   <li>Jika email dan password benar maka anda bisa masuk ke halaman selanjutnya, jika gagal anda bisa input ulang <img src="{{ asset('guest/img/panduan/login-3.png')}}" alt="" width="700px" height="400px"></li>
+                                   <li>Masuk ke halaman login dengan klik button profil, lalu klik login pada navbar <br><img src="{{ asset('guest/img/panduan/login-1.png')}}" alt="" width="600px" height="400px"></li><br/>
+                                   <li>Setelah masuk ke halaman Login. Scroll kebawah lalu masukkan email dan password dengan benar. <img src="{{ asset('guest/img/panduan/login-2.png')}}" alt="" width="700px" height="400px"></li><br/>
+                                   <li>Jika email dan password benar maka anda bisa masuk ke halaman selanjutnya, jika gagal anda bisa input ulang <img src="{{ asset('guest/img/panduan/login-3.png')}}" alt="" width="700px" height="400px"></li><br/>
                                    <li>Jika anda lupa dengan password. Bisa klik lupa password</li>
                            </ol>     
                         </p>
@@ -33,10 +34,14 @@
                                 <br><br>
                                 Beberapa penjelasan tentang rekap data pasien :
                                 <ol>
-                                        <li><strong>EDIT</strong> pasien bisa pada halaman data pasien. Lalu <strong>SEARCH</strong> pada kolom searc
-                                        nama pasien lalu klik button pensil yang tertera disebelah nama pasien yang anda inginkan. <img src="{{ asset('guest/img/panduan/pasien-1.png')}}" alt="" width="750px" height="400px"> <br> <hr> <img src="{{ asset('guest/img/panduan/pasien-4.png')}}" alt="" width="750px" height="400px"> </li>
-                                        <li><strong>PRINT</strong> Untuk fitur print anda bisa masuk ke halaman <strong>data-pasien</strong> lalu cari nam pasien yang anda cari 
-                                                lalu klik button mata yang ada di sebelah kanan nama pasien.Anda akan diarahkan ke halaman detail pasien. <br><img src="{{ asset('guest/img/panduan/pasien-2.png')}}" alt="" width="750px" height="400px"> <br> <hr> <img src="{{ asset('guest/img/panduan/pasien-5.png')}}" alt="" width="750px" height="400px"></li>
+                                        <li><strong>EDIT</strong> pasien bisa pada halaman data pasien. Lalu <strong>SEARCH</strong> pada kolom search
+                                        nama pasien lalu klik button pensil yang tertera disebelah nama pasien yang anda inginkan. </li>
+                                        <img src="{{ asset('guest/img/panduan/pasien-1.png')}}" alt="" width="750px" height="400px"> <br/> <hr>
+                                        <li><strong>PRINT</strong> Untuk fitur print Anda bisa masuk ke halaman <strong>data-pasien</strong> lalu cari nama pasien yang anda cari lalu klik button mata yang ada di sebelah kanan nama pasien.Anda akan diarahkan ke halaman detail pasien. <br/>
+                                        <img src="{{ asset('guest/img/panduan/pasien-2.png')}}" alt="" width="750px" height="400px"> <br>
+                                        <img src="{{ asset('guest/img/panduan/pasien-4.png')}}" alt="" width="750px" height="400px"> <hr>
+                                         <li><strong>UPDATE</strong> Petugas dan pemilik dapat mengedit data pasien dengan menekan <strong>ikon edit</strong> di halaman data pasien</li><br/>
+                                        <img src="{{ asset('guest/img/panduan/pasien-5.png')}}" alt="" width="750px" height="400px">
                                         <li><strong>DELETE</strong> Untuk fitur ini dilakukan ketika ada nama pasien yang ingin di hapus. Caranya bisa ke halaman data-pasien -> 
                                         cari nama pasien -> klik buttondengan tanda sampah maka ada alert akan muncul. <br><img src="{{ asset('guest/img/panduan/pasien-3.png')}}" alt="" width="750px" height="400px"><br></li>
                                 </ol>
@@ -68,5 +73,5 @@
                         </p>
                 </div>
         </div>
-
+</div>
 @endsection
