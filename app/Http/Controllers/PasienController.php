@@ -26,7 +26,7 @@ class PasienController extends Controller
             'tgl_lahir' => 'required',
             'umur' => 'required',
             'jenisKelamin' => 'required',
-            'telepon' => 'required | min:13 | max:13',
+            'telepon' => 'required | min:12 | max:12',
             'alamat' => 'required',
             'riwayat' => 'required',
             'gejala' => 'required | max:256',

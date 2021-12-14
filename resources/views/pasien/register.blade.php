@@ -51,6 +51,7 @@
                               </select>
                             </div>
 
+
                             <div class="mb-3 ">
                               <label for="telepon" class="form-label">Telepon</label>
                               <input type="number" class="form-control @error('telepon') is-invalid @enderror" id="telepon" name="telepon" placeholder="+62" required="" value="{{ old('telepon') }}">

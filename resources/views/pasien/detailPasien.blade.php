@@ -20,7 +20,8 @@
               <div class="card-body p-4">
                 <h6>Riwayat Pasien</h6> 
                 <small>Petugas {{$pasien->user->nama}}</small> <br/>
-                <small>Tanggal {{$pasien->created_at}}</small>
+                <small>Tanggal {{$pasien->created_at}}</small> <br/>
+                <small>{{$pasien->created_at->diffForHumans()}}</small>
                 <hr class="mt-0 mb-4">
                 <div class="row pt-1">
                   <div class="col-4 mb-3">

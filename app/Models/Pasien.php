@@ -18,7 +18,9 @@ class Pasien extends Model
     {
         $query->when($filters['cari'] ?? false, function ($query, $cari) {
             return $query->where(function ($query) use ($cari) {
-                $query->where('nama', 'like', '%' . $cari . '%');
+                $query->where('nama', 'like', '%' . $cari . '%')
+                      ->orWhere('jenisKelamin', 'like', '%' . $cari . '%')
+                      ->orWhere('umur', 'like', '%' . $cari . '%');
             });
         });
     }

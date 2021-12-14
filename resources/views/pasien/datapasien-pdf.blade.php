@@ -2,6 +2,7 @@
     <h3 align="text-center">Klinik Ora Et Labora</h3>
     <p align="text-center"> Petugas {{ $pasien->user->nama}}</p>
     <p align="text-center"> Tanggal {{ $pasien->created_at}}</p>
+    <p align="text-center"> {{ $pasien->created_at->diffForHumans()}}</p>
 </div>
 
 <form>
