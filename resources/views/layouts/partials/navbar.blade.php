@@ -9,10 +9,10 @@
                 "
             >
                 <div class="align-items-center d-none d-md-flex">
-                    <i class="bi bi-clock"></i> Senin - Sabtu, 04.00 - 07.00 WIB
+                    <i class="bi bi-clock"></i> Senin - Sabtu, 04.00 - 19.00 WIB
                 </div>
                 <div class="d-flex align-items-center" >
-                    <i class="bi bi-phone" id="noHp">Kontak 0852-6901-5132</i> 
+                    <i class="bi bi-phone" id="noHp">Kontak 0821-9578-9274</i> 
                 </div>
             </div>
         </div>

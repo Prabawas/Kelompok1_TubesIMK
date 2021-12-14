@@ -31,7 +31,7 @@
 					<input type="password" name="password" class="form-control" id="password" placeholder="password" required="">
 					
 					{{-- Lupa Password --}}
-					<a href="{{ url('/forgot_password') }}">Lupa Password</a>
+					{{-- <a href="{{ url('/forgot_password') }}">Lupa Password</a> --}}
 		
 					<label for="password">Password</label>
 					</div>
